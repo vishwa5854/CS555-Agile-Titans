@@ -1,0 +1,10 @@
+services:
+  titans:
+    container_name: titans
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: titans
+    restart: always
+    ports:
+      - "3336:3000"
